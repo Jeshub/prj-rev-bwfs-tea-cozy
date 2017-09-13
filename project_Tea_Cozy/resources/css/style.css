@@ -1,0 +1,128 @@
+header, section, footer, aside, nav, main, article, figure {
+    display: block; /* make sure old browsers understand HTML5 semantic elements */
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* header section */
+header {
+  display: flex;
+  justify-content: space-between; /* puts logo to the left and links to the right */
+  align-items: center;  /* center elements (<img> and <nav>) in header section vertically */
+  position: fixed; /* keep header permanent on top of user window */
+  z-index: 20; /* keep header on top of all other html elements */
+  top: 0; /* glue header permanently to top of view */
+  width: 100%; /* spread header over total width of screen, separating logo on left side and links on right side with help of justify-content: "space-between" */
+  border-bottom: 1px solid seashell;
+  height: 69px;
+}
+
+nav {
+  display: inline-flex;
+}
+
+.backgroundBlack {  /* used for several elements */
+    background-color: black;
+}
+
+.navLink {
+  margin-right: 20px;
+  text-decoration: underline; /* default, I know, but outlined in the redline */
+  color: seashell;
+}
+
+#logo {
+  margin-left: 10px;
+  height: 50px;
+}
+
+/* main section */
+main {
+  display: flex;
+  flex-direction: column;  /* make all sections on webpage vertically aligned, but wrapped so remember to make each section element fill out the horizontal space (like 'flex-basis: 100%' or 'width: 100%') */
+  align-items: center;  /* center elements in main section horizontally. 'align-items' used because 'flex-direction': column; */
+}
+
+/* mission section in main section */
+#mission {
+  display: flex;
+  align-items: center; /* center mission text vertically */
+  margin-top: 62px; /* keep mission section right below header */
+  background-image: url('../images/img-mission-background.jpg');
+  width: 1200px;
+  height: 700px;
+}
+
+.sectionHeaderText {  /* used for several elements */
+  flex-basis: 100%; /* spread section text horizontally (ie. over background image) */
+}
+
+/* featuredTea section in main section */
+#featuredTea {
+  display: flex;  /* make #featuredTea flex container */
+  width: 1000px; /* width of 'Tea of the Month' section */
+  flex-flow: row wrap;  /* put photos in a row and wrap to next line where necessary */
+  margin-top: 20px; /* create distance between mission section and featuredTea section */
+  margin-bottom: 40px; /* create space between 'featured tea' section and 'locations' sections */
+}
+
+#teaPicSection {
+  display: inline-flex;  /* make #teaPicSection flex container */
+  flex-flow: row wrap; /* pictures will flow horizontally and wrap to next line, when limit of width is reached */
+  justify-content: center;  /* center pictures horizontally */
+}
+
+.teaPicSectionElement {
+  margin: 0 30px 10px 0; /* margin between the pictures of tea: 30px to the right and 10px to the bottom */
+}
+
+.featuredTeaPic { /* height and width of featured tea pictures */
+  height: 200px;
+  width: 300px;
+}
+
+/* locations section in main section */
+#locations {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;  /* let the three locations float out in a row below (wrapped beneath) the 'Locations' headline (that take out an entire row with 'flex-basis: 100%') */
+  height: 500px;
+  width: 1200px;  /* same width as mission section */
+  background-image: url('../images/img-locations-background.jpg');
+  padding-bottom: 70px; /* make 'Locations' background-image look more alike the 'tea cozy redline' */
+}
+
+#addresses {
+  display: flex;  /* make #addresses flex container */
+  align-items: flex-start;  /* cut away black bottom of '.locationAddress' */
+  justify-content: center;  /* center pictures horizontally (does not seem to have much effect) */
+  margin-top: 15px; /* 15px distance between 'Locations' headline and locations (Downtown, East Bayside and Oakdale) */
+}
+
+.locationAddress {
+  display: inline-flex;
+  width: 300px; /* width of the box with locations */
+  flex-direction: column; /* order addresses in location vertically */
+  margin-right: 40px; /* make 40px margin between 'locationAddress', but also make 40px margin after last 'locationAddress' element (fixed below) */
+}
+
+.locationAddress:last-child  {
+  margin-right: 0;  /* Removes the 40px margin after last 'locationAddress' element */
+}
+
+/* footer section */
+footer {
+  height: 200px;
+}
+
+#copyright {
+  margin-top: 20px; /* make distance to footer 20px */
+  text-align: left;
+}

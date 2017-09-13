@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tea Cozy</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+  </head>
+  <body>
+    <!--
+        I tried to use more semantic tags than divs for this project.
+        Hence the use of <main>, <article>, <section>, etc.
+        I gave semantic tags or class or id names to elements that would need
+        to be addressed in the CSS sheet, to avoid the use of combinators.
+        It is for trying to incorporate best practices from the start.
+        Sorry if it causes inconvenience when revising.
+    -->
+
+    <!-- Start of header section -->
+    <header class="backgroundBlack">
+      <img id="logo" src="resources/images/img-tea-cozy-logo.png" alt="Tea Cozy logo">
+      <nav>
+        <span><a class="navLink" href="#mission">Mission</a></span>
+        <span><a class="navLink" href="#featuredTea">Featured Tea</a></span>
+        <span><a class="navLink" href="#locations">Locations</a></span>
+      </nav>
+    </header>
+    <!-- End of header section -->
+
+    <!-- Start of main section -->
+    <main>
+
+      <!-- Start of mission section -->
+      <section id="mission">
+        <div class="sectionHeaderText backgroundBlack">
+          <h2>Our Mission</h2>
+          <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+        </div>
+      </section>
+      <!-- End of mission section -->
+
+      <!-- Start of featuredTea section -->
+      <section id="featuredTea">
+        <section class="sectionHeaderText backgroundBlack">
+          <h2>Tea of the Month</h2>
+          <h4>What's the steeping at The Tea Cozy?</h4>
+        </section>
+        <section id="teaPicSection">
+          <div class="teaPicSectionElement">
+            <img class="featuredTeaPic" src="resources/images/img-berryblitz.jpg" alt="Picture of Fall Berry Blitz Tea">
+            <h4>Fall Berry Blitz Tea</h4>
+          </div>
+          <div class="teaPicSectionElement">
+            <img class="featuredTeaPic" src="resources/images/img-spiced-rum.jpg" alt="Picture of Spiced Rum Tea">
+            <h4>Spiced Rum Tea</h4>
+          </div>
+          <div class="teaPicSectionElement">
+            <img class="featuredTeaPic" src="resources/images/img-donut.jpg" alt="Picture of Seasonal Donuts">
+            <h4>Seasonal Donuts</h4>
+          </div>
+          <div class="teaPicSectionElement">
+            <img class="featuredTeaPic" src="resources/images/img-myrtle-ave.jpg" alt="Picture of Myrtle Ave Tea">
+            <h4>Myrtle Ave Tea</h4>
+          </div>
+          <div class="teaPicSectionElement">
+            <img class="featuredTeaPic" src="resources/images/img-bedford-bizarre.jpg" alt="Picture of Bedford Bizarre Tea">
+            <h4>Bedford Bizarre Tea</h4>
+          </div>
+        </section>
+      </section>
+      <!-- End of featuredTea section -->
+
+      <!-- Start of locations section -->
+      <section id="locations">
+        <section class="sectionHeaderText">
+          <h2>Locations</h2>
+        </section>
+        <section id="addresses">
+          <div class="locationAddress backgroundBlack">
+            <h3>Downtown</h3>
+            <p>384 West 4th St</p>
+            <p>Suite 108</p>
+            <p>Portland, Maine</p>
+          </div>
+          <div class="locationAddress backgroundBlack">
+            <h3>East Bayside</h3>
+            <p>3433 Phisherman's Avenue</p>
+            <p>(Northwest Corner)</p>
+            <p>Portland, Maine</p>
+          </div>
+          <div class="locationAddress backgroundBlack">
+            <h3>Oakdale</h3>
+            <p>515 Crescent Avenue</p>
+            <p>Second Floor</p>
+            <p>Portland, Maine</p>
+          </div>
+        </section>
+      </section>
+      <!-- end of locations section -->
+
+    </main>
+    <!-- End of main section -->
+
+    <!-- Start of footer section -->
+    <footer>
+      <h2>The Tea Cozy</h2>
+      <h5>contact@theteacozy.com</h5>
+      <h5>917-555-8904</h5>
+    </footer>
+    <!-- End of footer section -->
+
+    <!-- Start of aside section -->
+      <aside id="copyright">
+        <h5>copyright The Tea Cozy 2017</h5>
+      </aside>
+    <!-- End of aside section -->
+  </body>
+</html>
